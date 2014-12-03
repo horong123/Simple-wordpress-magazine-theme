@@ -1,0 +1,658 @@
+/*
+Theme Name:     Twenty Twelve Child
+Theme URI:      http://horong123.com/
+Description:    Child theme for the Twenty Twelve theme
+Author:         Rusman Tambunan
+Author URI:     http://horong123.com/
+Template:       twentytwelve
+Version:        0.1.0
+*/
+@import url("../twentytwelve/style.css");
+
+/* =Reset
+-------------------------------------------------------------- */
+nav {
+	display: inline-block;
+	width: 100%;
+}
+
+/* Buttons */
+.menu-toggle,
+input[type="submit"],
+input[type="submit"]:hover {
+	font-size: 12px;
+	font-size: 0.85714rem;
+	font-weight: 600;
+}
+.menu-toggle,
+input[type="submit"] {
+	background-color: #25823D;
+	background-image: -moz-linear-gradient(center top, #35b857, #25823D);
+	color: #DDDDDD;
+}
+.menu-toggle:hover,
+.menu-toggle.toggled-on,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+	background-color: #25823D;
+	background-image: -moz-linear-gradient(center top, #35b857, #288C42);
+	color: #EEEEEE;
+}
+
+
+/* Responsive images */
+img.attachment-thumbnail.wp-post-image {
+	max-width: 25%;
+}
+img.attachment-post-thumbnail.wp-post-image {
+	display: block;
+}
+
+
+/* =Basic structure
+-------------------------------------------------------------- */
+
+/* Body, links, basics */
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Assistive text */
+.assistive-text {
+	display: none;
+}
+
+
+/* Page structure */
+.widget-area {
+	margin: 24px 0 0;
+	margin: 1.714285714rem 0 0;
+	background-color: #F8F8F8;
+}
+
+
+/* Header
+-------------------------------------------------------------- */
+.site-header h1,
+.site-header h2 {
+	text-align: left;
+}
+.site header .site-logo img{
+	/*
+	background-position: top left;
+	background-image: url('image/sitelogo.png');
+	background-repeat: no-repeat;
+	*/
+	display: inline-block;
+	float: left;
+	width: 20.83%;
+	min-width: 150px;
+	height: auto;	
+	margin: 0px 8px;
+}
+#title-description {
+	float: left;
+}
+.site-header .site-login-search .site-search {
+	display: none;
+}
+.myclear {
+	clear: both;
+}
+
+
+/* Navigation Menu */
+.main-navigation {
+	text-align: left;
+}
+.menu-toggle {
+	float: left;
+}
+.site-search-2 {
+	display: inline-block;
+	margin-left: 7px;
+	margin-left: 0.5rem;
+}
+.main-navigation ul.nav-menu.toggled-on {
+	background-color: #97eb6c;
+}
+
+
+/* Sidebar */
+.widget-title {
+	font-size: 16px;
+	font-size: 1.142857rem;
+	text-transform: none;
+	/*color: #c54a36;*/
+}
+.widget-area .widget {
+	margin-top: 15px;
+	margin-top: 1.07143rem;
+	margin-left: 15px;
+	margin-left: 1.07143rem;
+	margin-right: 15px;
+	margin-right: 1.07143rem;
+	background-color: #FEFEFE;
+}
+.widget-area .widget h3 {
+	background-color: #F8F8F8;
+	border-bottom: 2px solid #35B857;
+	margin-bottom: 1rem;
+	padding: 0 5px;
+	padding: 0 0.35714rem;
+}
+.widget-area .widget ul {
+	padding: 0 5px;
+	padding: 0 0.35714rem;
+	margin-bottom: 5px;
+	margin-bottom: 0.35714rem;
+}
+.widget-area .widget li {
+	border-bottom: 1px solid #DDDDDD;
+	margin: 5px 0px;
+	padding-bottom: 5px;
+}
+.widget
+.widget-area .widget li a,
+.widget-area .widget li a:visited {
+	color: #21759b;
+	font-size: 14px;
+	font-size: 1rem;	
+}
+.widget-area .widget li a:hover {
+	color: #0F3647;
+}
+.widget-area .textwidget .socialwidget,
+.widget-area .textwidget .genericwidget {
+	list-style: none outside;
+}
+.widget-area .textwidget .genericwidget  li {
+	font-size: 14px;
+	font-size: 1rem;
+}
+.widget-area .textwidget .socialwidget  li {
+	display: inline-block;
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+.widget-area .textwidget .socialwidget  li
+.widget-social-twitter {
+	background-position: 0 0;
+	background-image: url('image/social-twit.png');
+	display: inline-block;
+	height: 37px;
+	width: 36px;
+	margin: 0;
+}
+.widget-area .textwidget .socialwidget  li
+.widget-social-fb {
+	background-position: 0 0;
+	background-image: url('image/social-fb.png');
+	display: inline-block;
+	height: 37px;
+	width: 37px;
+	margin: 0;
+}
+.widget-area #s {
+	width: 62%; /* define a width to avoid dropping a wider submit button */
+}
+
+
+/* =Main content and comment content
+-------------------------------------------------------------- */
+.entry-home {
+	margin: 0 0 24px;
+	margin: 0 0 0.857143rem;
+	display: inline;
+}
+.entry-header {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+/*
+article.sticky .featured-post {
+	border-top: 4px double #ededed;
+	border-bottom: 4px double #ededed;
+	color: #757575;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 3.692307692;
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+	text-align: center;
+}
+*/
+.entry-header img.attachment-thumbnail.wp-post-image {
+	margin-bottom: 0;
+}
+img.attachment-thumbnail.wp-post-image {
+	float: left;
+	/*margin: 0 1.71429rem 0 0;*/
+	margin-right: 5%;
+	border-radius: 0;
+	box-shadow: none;
+}
+.entry-header .entry-teaser {
+	float: left;
+	width: 70%;
+}
+.entry-home ol,
+.entry-home ul {
+	margin: 0 0 24px;
+	margin: 0 0 1.714285714rem;
+	line-height: 1.714285714;
+}
+.entry-home ul ul,
+.entry-home ol ol,
+.entry-home ul ol,
+.entry-home ol ul {
+	margin-bottom: 0;
+}
+.entry-home ul {
+	list-style: disc outside none;
+}
+.entry-home ol {
+	list-style: decimal outside;
+}
+.entry-home li {
+	margin: 0 0 0 36px;
+	margin: 0 0 0 2.571428571rem;
+}
+.entry-header .entry-title a {
+	text-decoration: none;
+}
+.entry-header .entry-title a:hover {
+	text-decoration: none;
+}
+.comments-link .popup-link,
+.comments-link .edit-link {
+	margin: 0 0 0 40px;
+}
+.comments-link a,
+.entry-meta a {
+	color: #21759b;
+	text-decoration: none;
+}
+.comments-link a:hover,
+.entry-meta a:hover {
+	text-decoration: underline;
+}
+.entry-header .navigation-link {
+	margin-bottom: 16px;
+	margin-bottom: 1.142857143rem;
+	font-size: 13px;
+	font-size: 0.928571rem;
+}
+.entry-header .comments-link {
+	margin-top: 16px;
+	margin-top: 1.142857143rem;
+}
+.entry-content th {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+	text-align: center;
+	background-color: #D3D3D3;
+}
+.entry-content td ul,
+.entry-content td ul li {
+	margin: 0 0 0 0.857143rem;
+}
+.site-content article {
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 14px;
+	margin-bottom: 1.0rem;
+	padding-bottom: 0;
+	vertical-align: middle;
+}
+.single-author .entry-meta .by-author {
+	display: inline;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+/* reCaptcha form */
+#recaptcha_widget {
+	margin: 0.785714rem 0;
+}
+#recaptcha_area {
+	max-width: 250px;
+	padding: 0.35714rem;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	background-color: #E6E6E6;
+	background-image: linear-gradient(#FFFFFF, #E6E6E6 100px);
+}
+#recaptcha_image {
+	margin-bottom: 0.785714rem;
+}
+#recaptcha_image,
+#recaptcha_image img {
+	width: 240px !important;
+}
+.recaptcha_only_if_image,
+.recaptcha_only_if_audio {
+	line-height: 120%;
+}
+#recaptcha_response_field {
+	width: 100% !important;
+}
+
+
+/* =Media in PC & Navigation Menu
+-------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+	.site-content {
+		width: 62.5%;
+	}
+	.widget-area {
+		width: 34.375%;
+	}
+	nav {
+		display: block;
+	}
+	.main-navigation ul.nav-menu {
+		/*
+		background-color: #25823D;EFEFEF;
+		*/
+		background-color: #FFFFFF;
+		border-top: none;
+		border-bottom: 3px solid #35B857;
+	}
+	.main-navigation li {
+		margin: 0;
+	}
+	.main-navigation li a {
+		padding: 0 20px;
+		padding: 0 1.42857rem;
+		font-size: 14px;
+		font-size: 1rem;
+		line-height: 2.28571;
+	}
+	.main-navigation li a:hover {
+		background-color: #EFEFEF;
+	}
+	.main-navigation .nav-menu > li.current-menu-item > a {
+		/*
+		background-color: #35B857;
+		*/
+		color: #35B857;
+	}
+	.main-navigation .nav-menu > li.current-menu-ancestor > a {
+		/*
+		border-bottom: 3px solid #FF0000;
+		background-color: #35B857;
+		*/
+		background-color: #EFEFEF;
+	}
+	.site-header .site-login-search {
+		float: right;
+	}
+	.site-header .site-login-search .site-login {
+		margin: 14px 0;
+		margin: 1rem 0;
+		text-align: right;
+	}
+	.site-header .site-login-search .site-search {
+		display: inline-block;
+	}	
+	.site-search-2 {
+		display: none;
+	}
+	.entry-header {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.entry-title {
+		clear: initial;
+	}
+	.entry-header .entry-title {
+		font-size: 20px;
+		font-size: 1.428571429rem;
+	}
+	.entry-header .comments-link {
+		margin-top: 16px;
+		margin-top: 1.142857143rem;
+	}
+	.entry-header .navigation-link {
+		margin-bottom: 16px;
+		margin-bottom: 1.142857143rem;
+		font-size: 13px;
+		font-size: 0.928571rem;
+	}
+	.entry-home {
+		display: inline-block;
+/*		width: 100%;
+*/
+	}
+	.entry-content,
+	.entry-summary {
+		margin-top: 16px;
+		margin-top: 1.142857143rem;
+	}
+	.entry-summary p {
+		margin: 0;
+		line-height: 1.428571429;
+	}
+	.entry-summary ul,
+	.entry-summary ol {
+		list-style: disc inside none;
+	}
+	.menu-item-home:before {
+		font-family: "dashicons";
+		content: "\f102";
+		display: inline-block;
+	}
+	.menu-item.menu-item-search {
+		float: right;
+		margin: 0.07143rem 1.42857rem 0 0;
+	}
+}
+
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	body .site {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+footer[role="contentinfo"] {
+/*
+	color: #CCCCCC;
+	background-color: #333333;
+*/
+	color: #DDDDDD;
+	background-color: #25823D;
+	padding: 12px 12px;
+	padding: 0.857142857rem 0.857142857rem;
+}
+
+footer[role="contentinfo"] a {
+	color: #DDDDDD;
+	text-decoration: none;
+}
+footer[role="contentinfo"] a:hover {
+	color: #DDDDDD;
+	text-decoration: underline;
+}
+.footer-social li {
+	display: inline-block;
+	list-style: none;
+}
+.footer-social li a {
+	background-image: url('image/asset_logo.png');
+	background-repeat: no-repeat;
+	width: 31px;
+	height: 31px;
+	display: block;
+}
+.footer-social li a.footer-social-facebook {
+	background-position: 0 0;
+	float: left;
+	margin-left: 4px;
+}
+.footer-social li a.footer-social-twitter {
+	background-position: -31px 0;
+	margin-left: 2px;
+}
+.footer-social li a.footer-social-wordpress {
+	background-position: -62px 0;
+	margin-left: 2px;
+}
+.footer-social li a.footer-social-facebook:hover {
+	background-position: 0 -31px;
+	margin-left: 4px;
+}
+.footer-social li a.footer-social-twitter:hover {
+	background-position: -31px -31px;
+	margin-left: 2px;
+}
+.footer-social li a.footer-social-wordpress:hover {
+	background-position: -62px -31px;
+	margin-left: 2px;
+}
+
+
+/* =Display post
+-------------------------------------------------------------- */
+.display-posts-listing {
+	display: block;
+}
+
+.display-posts-listing
+.listing-item {
+	float: left;
+	width: 25%;
+	height: 220px;
+	margin: 10px 30px 10px 0;	
+}
+
+/*
+.display-posts-listing
+.listing-item a img {
+	clear: both;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+*/
+
+.display-posts-listing
+.listing-item
+.title {
+	/*clear: both;*/
+	/*text-align: center;*/
+	text-decoration: none;
+	font-size: 14px;
+	font-size: 1.0rem;
+	font-weight: normal;
+}
+
+
+/* =Responsive slider
+-------------------------------------------------------------- */
+.responsive-slider.flexslider .flex-control-nav {
+	display: none;
+}
+.responsive-slider.flexslider .slide-title a {
+	/*
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 1.3em;
+	margin: 0;
+	padding: 0.5em 1em;
+	position: absolute;
+	text-shadow: none;
+	*/
+	right: auto;
+	top: auto;
+	bottom: 0;
+}
+
+
+/* =Included From wp-reCAPTCHA plugin
+-------------------------------------------------------------- */
+
+/* RECAPTCHA STYLING */
+.recaptcha-error {
+   font-size: 1.8em;
+   padding-bottom: 8px;
+}
+/* END RECAPTCHA STYLING */
+
+/* MAILHIDE STYLING */
+
+/* This is for plain text emails i.e. haha@lol.com - TEXT*/
+.mh-plaintext {
+   background:transparent url(email.png) no-repeat scroll left center;
+   border:medium none;
+   color:#2277DD;
+   height:16px;
+   padding:2px 2px 4px 20px;
+}
+
+/* This is for plain text emails i.e. haha@lol.com - DOTS*/
+.mh-plaintext a, .mh-plaintext a:hover, .mh-plaintext a:visited, .mh-plaintext a:visited:hover {
+   color: #FF7700;
+   font-weight: bolder;
+   text-decoration: none;
+   border: 0;
+   background-color: transparent !important;
+}
+
+/* This is for hyperlinked emails i.e. <a href="mailto:ohnoes@pwnies.com">TEXT</a> - TEXT*/
+.mh-hyperlinked {
+   background:transparent url(email.png) no-repeat scroll left center;
+   border:medium none;
+   color:#2277DD;
+   height:16px;
+   padding:2px 2px 4px 20px;
+}
+
+/* This is for hyperlinked emails i.e. <a href="mailto:ohnoes@pwnies.com">TEXT</a> - DOTS*/
+.mh-hyperlinked a, .mh-hyperlinked a:hover, .mh-hyperlinked a:visited, .mh-hyperlinked a:visited:hover {
+   color: #FF7700;
+   font-weight: bolder;
+   text-decoration: none;
+   border: 0;
+}
+/* END MAILHIDE STYLING */
+
+/* ADMINISTRATION SETTINGS RECAPTCHA */
+.lang-select label, .theme-select label {
+   vertical-align: middle !important;
+}
+
+.lang-select select, .theme-select select {
+   vertical-align: middle !important;
+}
+
+.recaptcha-form {
+   margin: auto !important;
+   width: 25em !important;
+}
+
+.recaptcha-options td {
+   vertical-align: top !important;
+}
+
+.which-key label {
+   font-weight: bold;
+}
+
+.copyright {
+   text-align: center;
+   font-size: .85em;
+}
+/* END ADMINISTRATION SETTINGS RECAPTCHA */
